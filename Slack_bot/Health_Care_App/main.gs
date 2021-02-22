@@ -1,5 +1,5 @@
 function processData() {
-  const SHEET_URL ="https://docs.google.com/spreadsheets/d/1tTMx35W4OmSnPPn7O70ctzoYTJz2gfwSLE8-rmz41AA/edit#gid=361941574";
+  const SHEET_URL ="";
   const SHEET1 = SpreadsheetApp.openByUrl(SHEET_URL).getSheetByName("フォームの回答 1");
   const SHEET2 = SpreadsheetApp.openByUrl(SHEET_URL).getSheetByName("name-list");
   const SHEET3 = SpreadsheetApp.openByUrl(SHEET_URL).getSheetByName("mail-list");
@@ -100,7 +100,7 @@ function creatMessage(sheet2Values,sheet3Values) {
 //-----------------Slackへのpost用関数---------------
 //引数sheet2Values
 function postSlack(text) {
-  var url = 'https://hooks.slack.com/services/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'; // Webhook URLを入力する
+  var url = ''; // Webhook URLを入力する
 
   
   var postData = {
